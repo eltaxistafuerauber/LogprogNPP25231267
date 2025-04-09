@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea2025-04-09_1100"/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 10:46:18 p. m."/>
+        <attribute name="created" value="dmluc2M7U0FOVElBR09NQUNVSUw7MjAyNS0wNC0wODsxMDo0MTozNiBwLiBtLjszMDU2"/>
+        <attribute name="edited" value="dmluc2M7U0FOVElBR09NQUNVSUw7MjAyNS0wNC0wODsxMDo0NjoxOCBwLiBtLjsxOzMxNjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, temp, i" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <assign variable="b" expression="2"/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;Los primeros 64 n&#250;meros de la serie Fibonacci iniciando en 1 y 2:&quot;" newline="True"/>
+            <output expression="a" newline="False"/>
+            <output expression="&quot;, &quot; &amp; b" newline="False"/>
+            <assign variable="i" expression="3"/>
+            <while expression="i &lt;= 64">
+                <assign variable="temp" expression="a + b"/>
+                <output expression="&quot;, &quot; &amp; temp" newline="False"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="temp"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <output expression="&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
